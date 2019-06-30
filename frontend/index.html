@@ -41,7 +41,8 @@
 
   ================================================== -->
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport"
+  content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no" />
 
     <!-- Google Tag Manager -->
         <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -117,6 +118,7 @@
     <link rel="stylesheet" type="text/css" href="vendor/rs-plugin/css/settings.css" media="screen" />
 
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/menu-responsivo.css">
 
     <!-- Responsive Theme -->
 
@@ -128,27 +130,17 @@
 
     <script src="vendor/modernizr.js"></script>
 
-
-
-
-
-
-
     <!--[if IE]>
 
         <link rel="stylesheet" href="css/ie.css">
 
     <![endif]-->
 
-
-
     <!--[if lte IE 8]>
 
         <script src="vendor/respond.js"></script>
 
     <![endif]-->
-
-
 
     <!--[if lt IE 9]>
 
@@ -179,7 +171,7 @@
 
     <!-- BOF Loader -->
 
-    <div class="loader">
+    <!-- <div class="loader">
 
         <div class="spinner spinner-double-bounce">
 
@@ -189,25 +181,52 @@
 
         </div>
 
-    </div>
+    </div> -->
 
     <!-- EOF Loader -->
 
     <!-- BOF Header -->
+    <div class="header">
+        <a href="" class="logo" style="background-color: #3CB371; position: fixed; width: 100%">
+            <div style="float: left;">
+                <img src="images/header_logo.png" alt="logo" width="35" />
+            </div>
+            <div style="font-size: 12px;
+                        float: left;
+                        margin-top: 2.5%;
+                        padding-left: 2%;
+                        vertical-align: middle;
+                        max-width: 500px;
+                        color: white;
+                        font-weight: bold">
+                RAIO DESENTUPIDORA E DEDETIZADORA
+            </div>
+        </a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu-reponsivo">
+            <li><a href="#contato">LIGUE AGORA</a></li>
+            <li><a href="#divForm">SOLICITAR UM ORÇAMENTO</a></li>
+            <li><a href="#nossosservicos">NOSSOS SERVIÇOS</a></li>
+            <li><a href="#quemsomos">QUEM SOMOS</a></li>
+            <li><a href="#depoimentos">DEPOIMENTOS</a></li>
+        </ul>
+    </div>
 
+    <div class="">
     <header>
 
         <!-- BOF Top Bar -->
-
-        <div class="jx-header-1">
-
+        <div class="header-nao-responsivo">
+            <div class="jx-header-1">
+        </div>
 
 
             <!-- BDF TOOLBAR -->
 
             <div class="jx-topbar">
 
-                <div class="container">
+                <div>
 
 
                     <!-- Left Items -->
@@ -229,7 +248,7 @@
 
 
 
-                            <ul class="right">
+                            <ul class="right" style="margin-top: 0%">
 
 
                                 <li><a href="#"><i class="fa fa-user"></i></a></li>
@@ -260,6 +279,8 @@
                 </div>
 
             </div>
+
+            
 
             <!-- EDF TOOLBAR -->
             <div class="jx-header header-line">
@@ -351,21 +372,22 @@
                 </div>
 
             </div>
-            <div class="menu">
-                <menu style="text-align: center; padding-left: 17%">
+
+            <div class="menu-nao-responsivo">
+                <menu>
                     <ul>
                         <li><a class="active" href="#nossosservicos" title="Nossos Serviços" style="border-radius:0">
-                            <i class="fa fa-ambulance"></i>NOSSOS SERVIÇOS</a></li>
-                        <li><a href="#quemsomos" title="Quem somos"><i class="fa fa-user"></i>QUEM SOMOS</a></li>
-                        <li><a href="#depoimentos" title="Depoimentos"><i class="fa fa-users"></i>DEPOIMENTOS</a></li>
-                        <li><a href="#divForm" title="Fale Conosco"><i class="fa fa-envelope"></i>FALE CONOSCO</a></li>
-                        <li><a href="#contato" title="Clique aqui e ligue"><i class="fa fa-phone" ></i>LIGUE AGORA</a></li>
+                            <i class="fa fa-ambulance"></i> NOSSOS SERVIÇOS</a></li>
+                        <li><a href="#quemsomos" title="Quem somos"><i class="fa fa-user"></i> QUEM SOMOS</a></li>
+                        <li><a href="#depoimentos" title="Depoimentos"><i class="fa fa-users"></i> DEPOIMENTOS</a></li>
+                        <li><a href="#divForm" title="Fale Conosco"><i class="fa fa-envelope"></i> FALE CONOSCO</a></li>
+                        <li><a href="#contato" title="Clique aqui e ligue"><i class="fa fa-phone" ></i> LIGUE AGORA</a></li>
                         <li>
                             <a class="botao-cabecalho" href="#divForm" title="solicite um orçamento" style="
                         background-color: #ef4343;
                         color: #f7f6f5;
                         border-radius: 17px;">
-                            <i class="fa fa-comments"></i>SOLICITAR UM ORÇAMENTO</a>
+                            <i class="fa fa-comments"></i> SOLICITAR UM ORÇAMENTO</a>
                         </li>
                     </ul>
                 </menu>
@@ -410,30 +432,6 @@
 
                                 <!-- LAYER NR. 1 -->
 
-                                <div class="jx-caption-big-1 tp-caption grey_regular_18 customin tp-resizeme rs-parallaxlevel-0"
-                                    data-x="-105" data-y="250"
-                                    data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                                    data-speed="500" data-start="800" data-easing="Power3.easeInOut" data-splitin="none"
-                                    data-splitout="none" data-elementdelay="0.05" data-endelementdelay="0.1"
-                                    style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;">
-                                    <span style="font-size: 30px">
-                                        Dedetizadora, Desentupidora, Hidráulica, Limpezas de Caixa D'agua e Coifa,
-                                        Serviços em Geral
-                                    </span>
-                                </div>
-
-
-
-                                <div class="jx-caption-big-icon tp-caption grey_regular_18 customin tp-resizeme rs-parallaxlevel-0"
-                                    data-x="393" data-y="250"
-                                    data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                                    data-speed="500" data-start="800" data-easing="Power3.easeInOut" data-splitin="none"
-                                    data-splitout="none" data-elementdelay="0.05" data-endelementdelay="0.1"
-                                    style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;">
-                                    Faça um orçamento sem compromisso
-                                    
-
-                                </div>
 
 
 
@@ -575,18 +573,9 @@
 
 
     <!-- EOF Main Menu -->
-
-
-
     <!-- BOF Main Content -->
 
     <div role="main" class="main no-top-padding">
-
-
-
-
-
-
 
         <!--  BOF TAGLINE ACTION BOX  # 2 -->
 
@@ -602,9 +591,9 @@
 
                     <div class="thirteen columns">
 
-                        <div class="box-content">
+                        <div class="box-content" style="text-align: center">
 
-                            <h4>Vamos Conhecer um pouco mais sobre a empresa</h4>
+                            <h4>Vamos Conhecer um pouco mais sobre a Raio Desentupidora e Dedetizadora</h4>
 
                         </div>
 
@@ -1277,7 +1266,7 @@
     </div>
 
     <!-- EDF PROJECT IN PROGRESS-->
-
+</div>
 
 
     <!-- Process -->
